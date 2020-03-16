@@ -6,6 +6,8 @@
             new_admin_budget_group_heading_path,
             class: "button float-right" %>
 
+<%= render Admin::Budgets::HelpComponent.new("budget_headings") %>
+
 <% if @headings.any? %>
   <h3><%= t("admin.budget_headings.amount", count: @headings.count) %></h3>
   <table>
